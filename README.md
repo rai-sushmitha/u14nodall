@@ -40,6 +40,22 @@ node_js:
 
 build_image: drydock/u14nodall:prod
 
+services:
+  - cassandra
+  - elasticsearch
+  - memcached
+  - mongodb
+  - mysql
+  - neo4j
+  - postgres
+  - rabbitmq
+  - redis
+  - selenium
+  - sqllite
+  - couchdb
+  - rethinkdb
+  - riak
+
 before_install:
   # activate the nvm
   - source ~/.nvm/nvm.sh && nvm install $SHIPPABLE_NODE_VERSION
